@@ -4,17 +4,17 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e74bbd710246c8346299fe6a59ca1d81660e61b6a015bdabae0a1dcc5e3a2980
+-- hash: 810166d6de60afc2be7947637eaea053083d165fee227f83493b0c413cc546e9
 
 name:           wyas
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/wyas#readme>
-homepage:       https://github.com/githubuser/wyas#readme
-bug-reports:    https://github.com/githubuser/wyas/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2020 Author name here
-license:        BSD3
+homepage:       https://github.com/itsrainingmani/wyas#readme
+bug-reports:    https://github.com/itsrainingmani/wyas/issues
+author:         Manikandan Sundararajan
+maintainer:     mani@hey.com
+copyright:      2020 Manikandan Sundararajan
+license:        MIT
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -23,7 +23,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/wyas
+  location: https://github.com/itsrainingmani/wyas
 
 library
   exposed-modules:
@@ -34,6 +34,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , parsec >=3.1
   default-language: Haskell2010
 
 executable wyas-exe
@@ -45,6 +46,7 @@ executable wyas-exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , parsec >=3.1
     , wyas
   default-language: Haskell2010
 
@@ -58,5 +60,6 @@ test-suite wyas-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , parsec >=3.1
     , wyas
   default-language: Haskell2010
